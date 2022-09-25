@@ -14,6 +14,14 @@
 
     // 変数の中身を出力する
     echo $user_name;
+
+    echo '<br>';
+
+    // 変数に値を再代入する
+    $user_name = '侍花子';
+
+    // 変数の中身を出力する
+    echo $user_name;
     ?>
   </p>
 </body>
