@@ -26,6 +26,12 @@
 
         // 連想配列の値を出力する
         print_r($personal_data);
+
+        // 改行する
+        echo '<br>';
+
+        // 'gender'というキーの値を出力する
+        echo $personal_data['gender'];
         ?>
      </p>
  </body>
