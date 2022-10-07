@@ -17,6 +17,21 @@
     }
     ?>
   </p>
+  <p>
+    <?php
+    $personal_data = ['name' => '侍太郎', 'age' => '36', 'gender' => '男性'];
+
+    // 連想配列$personal_dataのキーと値を1つずつ順番に出力する
+    foreach ($personal_data as $key => $value) {
+      echo "{$key}は{$value}です。<br>";
+    }
+
+    // 連想配列$personal_dataの値を1つずつ順番に出力する
+    foreach ($personal_data as $value) {
+      echo $value . '<br>';
+    }
+    ?>
+  </p>
 
  </body>
  </html>
