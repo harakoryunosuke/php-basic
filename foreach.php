@@ -37,6 +37,26 @@
     }
     ?>
   </p>
+  <p>出身地を選択してください。</p>
+  <form>
+    <select>
+      <?php
+      $birthplaces = [
+        '北海道地方',
+        '東北地方',
+        '関東地方',
+        '中部地方',
+        '近畿地方',
+        '中国・四国地方',
+        '九州地方'
+      ];
+
+      foreach ($birthplaces as $birthplace) {
+        echo "<option>{$birthplace}</option>";
+      }
+      ?>
+    </select>
+  </form>
 
  </body>
  </html>
