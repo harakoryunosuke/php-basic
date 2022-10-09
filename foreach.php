@@ -57,6 +57,24 @@
       ?>
     </select>
   </form>
+  <p>
+    <?php
+    $user_names = ['侍太郎', '侍一郎', '侍二郎', '侍三郎', '侍四郎'];
+
+    // 検索したいユーザー名を代入する変数
+    $target = '侍二郎';
+
+    foreach ($user_names as $user_name) {
+      echo $user_name . '<br>';
+
+      // 変数$user_nameと変数$targetの値が一致すれば、break文で繰り返し処理を強制終了する
+      if ($user_name === $target) {
+        echo "{$target}さんが見つかったので、繰り返し処理を強制終了します。";
+        break;
+      }
+    }
+    ?>
+  </p>
 
  </body>
  </html>
